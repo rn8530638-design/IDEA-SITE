@@ -1,0 +1,29 @@
+{
+  "ts-node": {
+    "files": true,
+    "transpileOnly": true
+  },
+  "compilerOptions": {
+    "outDir": "../dist",                    // ← на уровень выше
+    "rootDir": "./",                        // ← текущая папка (src)
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "inlineSources": true,
+    "isolatedModules": false,
+    "lib": ["ES2021"],
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "target": "ES2021"
+  },
+  "include": ["./**/*"],                    // ← все файлы в текущей папке
+  "exclude": ["../dist", "../node_modules"] // ← на уровень выше
+}
