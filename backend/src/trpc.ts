@@ -17,3 +17,5 @@ export const trpcRouter = trpc.router({
 })
 
 export type TrpcRouter = typeof trpcRouter
+
+console.info(3)
